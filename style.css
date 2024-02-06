@@ -18,16 +18,6 @@ body{
     grid-template-columns: repeat(5, minmax(100px, 1fr));
     background-color: rgba(0, 0, 255, 0);
 }
-/* .logo-searchbar{
-    grid-row-start: 2;
-    grid-row-end: 5;
-    grid-column-start: 2;
-    grid-column-end: 5;
-    margin: 0 auto;
-    background-color: rgb(255, 0, 0);
-    width: 100%;
-    height: 200px;
-} */
 .michoto{
     grid-row: 2 / 3;
     grid-column: 3 / 4;
@@ -38,18 +28,6 @@ body{
     font-size: 80px;
     font-family: 'Protest Strike', sans-serif, sans-serif;
 }
-/* .cien{
-    position: absolute;
-    top: 70px;
-    color: #333333;
-    font-size: 60px;
-    font-family: 'Rubik Mono One', 'monospace', sans-serif;
-} */
-/* .kolor{
-    color: #aaff00;
-    font-size: 100px;
-    font-family: 'Nanum Pen Script', 'cursive', sans-serif;
-} */
 .search{
     grid-row-start: 3;
     grid-row-end: 4;
@@ -111,27 +89,12 @@ button{
     background-color: #333333;
     border-radius: 20px;
 }
-.sm{
+.text{
     font-family: 'Poiret One', sans-serif;
     font-size: 30px;
+    text-align: center;
     color: white;
-    width:170px;
-    height: 40px;
-    margin: 0 auto;
-}
-.s{
-    font-family: 'Poiret One', sans-serif;
-    font-size: 30px;
-    color: white;
-    width:80px;
-    height: 40px;
-    margin: 0 auto;
-}
-.o{
-    font-family: 'Poiret One', sans-serif;
-    font-size: 30px;
-    color: white;
-    width:80px;
+    width:200px;
     height: 40px;
     margin: 0 auto;
 }
