@@ -8,134 +8,116 @@
     <title>New Tab</title>
 </head>
 <body>
-    <div class="container spacer layer1">
+    <div class="container">
         <div class="michoto">MICHOTO</div>
 
         <div class="search">
             <form action="https://www.google.com/search" method="get" class="search-bar"> 
                 <input type="text" placeholder="What are you looking for?" name="q">
+
+                <div class="navigation">
+                    <!-- Menu Toggler -->
+                    <div class="menuToggle"></div>
+                    <!-- Menu Items -->
+                    <div class="menu">
+                      <ul>
+                        <li style="--i:0.1s;"><button onclick="googleEngine()"><img src="images/googleicon.png" class="listIcon"></button></li>
+                        <li style="--i:0.2s;"><button onclick="ddgEngine()"><img src="images/ddgicon.png" class="listIcon"></button></li>
+                        <li style="--i:0.3s;"><button onclick="yahooEngine()"><img src="images/yahooicon.png" class="listIcon"></button></li>
+                      </ul>
+                    </div>
+                  </div>
+
             </form>
-            <button>
-                <img class="bimg" src="images/google.png">
-            </button>
         </div>
         
 
         <div class="widgets">
-            <div class="widgets-grid">
-                <div class="box1">
-                    <p class="text">Social media</p>
-                    <hr color="#aaff00">
-                    <div class="buttons-grid">
+            <div class="box1">
+                <p class="text">Social media</p>
+                <hr color="#aaff00">
+                <div class="buttons-container">
 
-                        <a href="https://www.youtube.com" class="button1">
-                            <div>
-                                    <img src="images/youtube.png" class="img">
-                            </div>
-                        </a>
+                    <a href="https://www.youtube.com" class="button1">
+                                <img src="images/youtube.png" class="img">
+                    </a>
 
-                        <a href="https://www.instagram.com" class="button1">
-                            <div>
-                                <img src="images/instagram.png" class="img">
-                            </div>
-                        </a>
 
-                        <a href="https://www.twitter.com" class="button1">
-                            <div>
-                                <img src="images/twitter.png" class="img">
-                            </div>
-                        </a>
+                    <a href="https://www.instagram.com" class="button1">
+                            <img src="images/instagram.png" class="img">
+                    </a>
 
-                        <a href="https://www.twitch.com" class="button1">
-                            <div>
-                                <img src="images/twitch.png" class="img">
-                            </div>
-                        </a>
-                    </div>
+
+                    <a href="https://www.twitter.com" class="button1">
+                            <img src="images/twitter.png" class="img">
+                    </a>
+
+
+                    <a href="https://www.twitch.com" class="button1">
+                            <img src="images/twitch.png" class="img">
+                    </a>
+
+
                 </div>
-                <div class="box1">
-                    <p class="text">Shops</p>
-                    <hr color="#aaff00">
-                    <div class="buttons-grid">
+            </div>
+            <div class="box1">
+                <p class="text">Shops</p>
+                <hr color="#aaff00">
+                <div class="buttons-container">
 
-                        <a href="https://www.morele.net" class="button1">
-                            <div>
-                                    <img src="images/morele.png" class="img">
-                            </div>
-                        </a>
+                    <a href="https://www.morele.net" class="button1">
+                                <img src="images/morele.png" class="img">
+                    </a>
 
-                        <a href="https://www.amazon.pl/" class="button1">
-                            <div>
-                                <img src="images/amazon.png" class="img">
-                            </div>
-                        </a>
+                    <a href="https://www.amazon.pl/" class="button1">
+                            <img src="images/amazon.png" class="img">
+                    </a>
 
-                        <a href="https://www.mediaexpert.pl/" class="button1">
-                            <div>
-                                <img src="images/expert.png" class="img">
-                            </div>
-                        </a>
+                    <a href="https://www.mediaexpert.pl/" class="button1">
+                            <img src="images/expert.png" class="img">
+                    </a>
 
-                        <a href="https://www.allegro.pl/" class="button1">
-                            <div>
-                                <img src="images/allegro.png" class="img">
-                            </div>
-                        </a>
-                        <a href="https://www.olx.pl/" class="button1">
-                            <div>
-                                <img src="images/olx.png" class="img">
-                            </div>
-                        </a>
-                        <a href="https://www.otomoto.pl/" class="button1">
-                            <div>
-                                <img src="images/otomoto.png" class="img">
-                            </div>
-                        </a>
-                    </div>
+                    <a href="https://www.allegro.pl/" class="button1">
+                            <img src="images/allegro.png" class="img">
+                    </a>
+                    <a href="https://www.olx.pl/" class="button1">
+                            <img src="images/olx.png" class="img">
+                    </a>
+                    <a href="https://www.otomoto.pl/" class="button1">
+                            <img src="images/otomoto.png" class="img">
+                    </a>
                 </div>
-                <div class="box1">
-                    <p class="text">Other</p>
-                    <hr color="#aaff00">
-                    <div class="buttons-grid">
+            </div>
+            <div class="box1">
+                <p class="text">Other</p>
+                <hr color="#aaff00">
+                <div class="buttons-container">
 
-                        <a href="https://www.gmail.com" class="button1">
-                            <div>
-                                    <img src="images/gmail.png" class="img">
-                            </div>
-                        </a>
+                    <a href="https://www.gmail.com" class="button1">
+                                <img src="images/gmail.png" class="img">
+                    </a>
 
-                        <a href="https://mail.proton.me/" class="button1">
-                            <div>
-                                <img src="images/protonmail.png" class="img">
-                            </div>
-                        </a>
+                    <a href="https://mail.proton.me/" class="button1">
+                            <img src="images/protonmail.png" class="img">
+                    </a>
 
-                        <a href="https://poczta.wp.pl/login/login.html" class="button1">
-                            <div>
-                                <img src="images/wppoczta.png" class="img">
-                            </div>
-                        </a>
+                    <a href="https://poczta.wp.pl/login/login.html" class="button1">
+                            <img src="images/wppoczta.png" class="img">
+                    </a>
 
-                        <a href="https://store.steampowered.com/" class="button1">
-                            <div>
-                                <img src="images/steam.png" class="img">
-                            </div>
-                        </a>
-                        <a href="https://steamcharts.com/" class="button1">
-                            <div>
-                                <img src="images/steamcharts.png" class="img">
-                            </div>
-                        </a>
-                        <a href="https://www.roblox.com/home" class="button1">
-                            <div>
-                                <img src="images/roblox.png" class="img">
-                            </div>
-                        </a>
-                    </div>
+                    <a href="https://store.steampowered.com/" class="button1">
+                            <img src="images/steam.png" class="img">
+                    </a>
+                    <a href="https://steamcharts.com/" class="button1">
+                            <img src="images/steamcharts.png" class="img">
+                    </a>
+                    <a href="https://www.roblox.com/home" class="button1">
+                            <img src="images/roblox.png" class="img">
+                    </a>
                 </div>
             </div>
         </div>
-
     </div>
+    <script src="index.js"></script>
 </body>
 </html>
