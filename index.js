@@ -50,6 +50,9 @@ function settings(){
 
 // ------------------------------------------------------------------------ AKTUALNA DATA I POGODA I GODZINA | actual date, weather and time
 
+
+
+
 // data | date
 let dayName;
 let monthName;
@@ -179,8 +182,6 @@ function getWeatherEmoji(weatherId){
 }
 // POGODA | weather
 
-
-
 // ZEGAR | clock
 function updateClock(){
     const now = new Date();
@@ -190,10 +191,10 @@ function updateClock(){
     const timeString = `${hours}:${minutes}:${seconds}`;
     document.getElementById("clock").textContent = timeString;
 }
-
 updateClock();
 setInterval(updateClock, 1000);
-// ZEGAR | clock
 
+
+// ZEGAR | clock
 
 // ------------------------------------------------------------------------ AKTUALNA DATA I POGODA I GODZINA | actual date, weather and time
