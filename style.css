@@ -42,7 +42,7 @@ body{
 }
 #text2{
   position: relative;
-  width: calc(23vw + 23vh);
+  width: calc(27vw + 27vh);
   margin: 0;
 }
 #clock{
@@ -50,7 +50,7 @@ body{
   float: right;
   font-size: calc(1.5vw + 1.5vh);
   margin: 0;
-  width: calc(7vw + 7vh);
+  width: calc(6vw + 6vh);
   bottom: 60px;
 }
 .search{
