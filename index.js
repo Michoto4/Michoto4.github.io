@@ -42,6 +42,9 @@ function utils(){
 function settings(){
     window.location.assign("settings.html");
 }
+function todo(){
+    window.location.assign("todoApp.html");
+}
 
 
 
@@ -198,3 +201,13 @@ setInterval(updateClock, 1000);
 // ZEGAR | clock
 
 // ------------------------------------------------------------------------ AKTUALNA DATA I POGODA I GODZINA | actual date, weather and time
+
+
+
+
+
+
+
+
+
+
