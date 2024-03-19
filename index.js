@@ -8,7 +8,6 @@ const weekDay = now.getDay();
 const time = now.getTime();
 
 
-
 // to jest do przycisku od wyszukiwarek
 let menuToggle = document.querySelector('.menuToggle');
 menuToggle.onclick=function(){
@@ -199,6 +198,27 @@ setInterval(updateClock, 1000);
 
 
 // ZEGAR | clock
+
+// Greeter
+
+function greeterTimeOfDay(){
+    const greeter = document.getElementById("text1");
+    const hour = now.getHours();
+    console.log(hour);
+
+    if(hour >= 5 && hour < 18){
+        greeter.textContent = "Dzień Dobry, Michoto";
+        console.log("dzien dobry");
+    }
+    else{
+        greeter.textContent = "Dobry Wieczór, Michoto";
+        console.log("dobry wieczór");
+    }
+}
+
+greeterTimeOfDay()
+
+// Greeter
 
 // ------------------------------------------------------------------------ AKTUALNA DATA I POGODA I GODZINA | actual date, weather and time
 

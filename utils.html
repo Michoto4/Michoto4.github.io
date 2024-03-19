@@ -6,43 +6,55 @@
     <link href="https://fonts.googleapis.com/css2?family=Poiret+One&family=Protest+Strike&display=swap" rel="stylesheet"> 
     <script src="https://kit.fontawesome.com/b50faaaa02.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="utils.css">
+    <link rel="stylesheet" href="navbar.css">
     <title>Narzędzia</title>
 </head>
 <body>
-    <h1>Tu będą wszelkiego rodzaju narzedzia począwszy od zwykłego kalkulatora kończąc na np sprawdzaczu kursu walut (nie wiem jak to napisac XD). W skrócie po prostu przeróżne przydatne narzędzia które warto mieć pod ręką</h1>
+    <h1>Tu będą różne przydatne narzędzia (kalkulator, konwerter walut, itp)</h1>
 
     <!-- NAVBAR -->
-    <div id="nav-bar">
-        <input id="nav-toggle" type="checkbox"/>
-        <div id="nav-header"><a id="nav-title" href="index.html">NewTabPage</a>
-                <label for="nav-toggle"><span id="nav-toggle-burger"></span></label>
-                <hr/>
-        </div>
-        <div id="nav-content">
-                <div class="nav-button" onclick="portfolio()"><i class="fas fa-images"></i><span>Portfolio</span></div>
-                <div class="nav-button" onclick="utils()"><i class="fas fa-hammer"></i><span>Narzędzia</span></div>
-                <div class="nav-button" onclick="edit()"><i class="fas fa-edit"></i><span>Edytuj ikony</span></div>
-                <hr/>
-                <div class="nav-button" onclick="settings()"><i class="fas fa-gear"></i><span>Ustawienia</span></div>
-                <div id="nav-content-highlight"></div>
-        </div>
-        <input id="nav-footer-toggle" type="checkbox"/>
-        <div id="nav-footer">
-                <div id="nav-footer-heading">
-                        <div id="nav-footer-avatar"><img src="https://yt3.googleusercontent.com/ytc/AIdro_loEl2NAR_Ogpa0MHwopyyikOrNcrNzBEdz9rljfw=s176-c-k-c0x00ffffff-no-rj"/></div>
-                        <div id="nav-footer-titlebox"><a id="nav-footer-title" href="https://www.youtube.com/@michoto4" target="_blank">Michoto</a><span id="nav-footer-subtitle">Admin</span></div>
-                        <label for="nav-footer-toggle"><i class="fas fa-caret-up"></i></label>
+        <div id="nav-bar">
+                <input id="nav-toggle" type="checkbox" />
+                <div id="nav-header"><a id="nav-title" href="index.html"><i style="color: hsl(80, 100%, 60%);" class="fas fa-home"> H o m e</i></a>
+                        <label for="nav-toggle"><span id="nav-toggle-burger"></span></label>
+                        <hr />
                 </div>
-                <div id="nav-footer-content">
-                        <p>Siema, jestem michoto.</p>
-                        <p>⬇Moje sociale⬇</p>
-                        <p>🔴Youtube: Michoto</p>
-                        <p>🟠Instagram: michoto4</p>
-                        <p>🔵Twitter: @Michoto44</p>
+                <div id="nav-content">
+                        <div class="nav-button" onclick="portfolio()"><i
+                                        class="fas fa-images"></i><span>Portfolio</span></div>
+                        <div class="nav-button" onclick="utils()"><i class="fas fa-hammer"></i><span>Tools</span>
+                        </div>
+                        <div class="nav-button" onclick="edit()"><i class="fas fa-edit"></i><span>Edit icons</span>
+                        </div>
+                        <hr />
+                        <div class="nav-button" onclick="todo()"><i class="fas fa-list"></i><span>To-Do app</span></div>
+                        <hr />
+                        <div class="nav-button" onclick="settings()"><i class="fas fa-gear"></i><span>Settings</span>
+                        </div>
+                        <div id="nav-content-highlight"></div>
+                </div>
+                <input id="nav-footer-toggle" type="checkbox" />
+                <div id="nav-footer">
+                        <div id="nav-footer-heading">
+                                <div id="nav-footer-avatar"><img
+                                                src="https://yt3.googleusercontent.com/ytc/AIdro_loEl2NAR_Ogpa0MHwopyyikOrNcrNzBEdz9rljfw=s176-c-k-c0x00ffffff-no-rj" />
+                                </div>
+                                <div id="nav-footer-titlebox"><a id="nav-footer-title"
+                                                href="https://www.youtube.com/@michoto4"
+                                                target="_blank">Michoto</a><span id="nav-footer-subtitle">Admin</span>
+                                </div>
+                                <label for="nav-footer-toggle"><i class="fas fa-caret-up"></i></label>
+                        </div>
+                        <div id="nav-footer-content">
+                                <p>Siema, jestem michoto.</p>
+                                <p>⬇Moje sociale⬇</p>
+                                <p>🔴Youtube: <a href="https://www.youtube.com/@michoto4">Michoto</a></p>
+                                <p>🟠Instagram: <a href="https://www.instagram.com/michoto4/">michoto4</a></p>
+                                <p>🔵Twitter: <a href="https://twitter.com/Michoto44">@Michoto44</a></p>
+                        </div>
                 </div>
         </div>
-</div>
-<!-- NAVBAR -->
+        <!-- NAVBAR -->
 <script src="index.js"></script>
 </body>
 </html>

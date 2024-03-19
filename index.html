@@ -1,164 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&family=Protest+Strike&display=swap" rel="stylesheet"> 
-    <script src="https://kit.fontawesome.com/b50faaaa02.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
-    <title>New Tab</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Poiret+One&family=Protest+Strike&display=swap"
+                rel="stylesheet">
+        <script src="https://kit.fontawesome.com/b50faaaa02.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="navbar.css">
+        <title>New Tab</title>
 </head>
+
 <body>
 
         <!-- NAVBAR -->
         <div id="nav-bar">
-                <input id="nav-toggle" type="checkbox"/>
-                <div id="nav-header"><a id="nav-title" href="index.html">NewTabPage</a>
+                <input id="nav-toggle" type="checkbox" />
+                <div id="nav-header"><a id="nav-title" href="index.html"><i style="color: hsl(80, 100%, 60%);" class="fas fa-home"> H o m e</i></a>
                         <label for="nav-toggle"><span id="nav-toggle-burger"></span></label>
-                        <hr/>
+                        <hr />
                 </div>
                 <div id="nav-content">
-                        <div class="nav-button" onclick="portfolio()"><i class="fas fa-images"></i><span>Portfolio</span></div>
-                        <div class="nav-button" onclick="utils()"><i class="fas fa-hammer"></i><span>Narzędzia</span></div>
-                        <div class="nav-button" onclick="edit()"><i class="fas fa-edit"></i><span>Edytuj ikony</span></div>
-                        <hr/>
-                        <div class="nav-button" onclick="todo()"><i class="fas fa-list"></i><span>Lista "Do Zrobienia"</span></div>
-                        <hr/>
-                        <div class="nav-button" onclick="settings()"><i class="fas fa-gear"></i><span>Ustawienia</span></div>
+                        <div class="nav-button" onclick="portfolio()"><i
+                                        class="fas fa-images"></i><span>Portfolio</span></div>
+                        <div class="nav-button" onclick="utils()"><i class="fas fa-hammer"></i><span>Tools</span>
+                        </div>
+                        <div class="nav-button" onclick="edit()"><i class="fas fa-edit"></i><span>Edit icons</span>
+                        </div>
+                        <hr />
+                        <div class="nav-button" onclick="todo()"><i class="fas fa-list"></i><span>To-Do app</span></div>
+                        <hr />
+                        <div class="nav-button" onclick="settings()"><i class="fas fa-gear"></i><span>Settings</span>
+                        </div>
                         <div id="nav-content-highlight"></div>
                 </div>
-                <input id="nav-footer-toggle" type="checkbox"/>
+                <input id="nav-footer-toggle" type="checkbox" />
                 <div id="nav-footer">
                         <div id="nav-footer-heading">
-                                <div id="nav-footer-avatar"><img src="https://yt3.googleusercontent.com/ytc/AIdro_loEl2NAR_Ogpa0MHwopyyikOrNcrNzBEdz9rljfw=s176-c-k-c0x00ffffff-no-rj"/></div>
-                                <div id="nav-footer-titlebox"><a id="nav-footer-title" href="https://www.youtube.com/@michoto4" target="_blank">Michoto</a><span id="nav-footer-subtitle">Admin</span></div>
+                                <div id="nav-footer-avatar"><img
+                                                src="https://yt3.googleusercontent.com/ytc/AIdro_loEl2NAR_Ogpa0MHwopyyikOrNcrNzBEdz9rljfw=s176-c-k-c0x00ffffff-no-rj" />
+                                </div>
+                                <div id="nav-footer-titlebox"><a id="nav-footer-title"
+                                                href="https://www.youtube.com/@michoto4"
+                                                target="_blank">Michoto</a><span id="nav-footer-subtitle">Admin</span>
+                                </div>
                                 <label for="nav-footer-toggle"><i class="fas fa-caret-up"></i></label>
                         </div>
                         <div id="nav-footer-content">
                                 <p>Siema, jestem michoto.</p>
                                 <p>⬇Moje sociale⬇</p>
-                                <p>🔴Youtube: Michoto</p>
-                                <p>🟠Instagram: michoto4</p>
-                                <p>🔵Twitter: @Michoto44</p>
+                                <p>🔴Youtube: <a href="https://www.youtube.com/@michoto4">Michoto</a></p>
+                                <p>🟠Instagram: <a href="https://www.instagram.com/michoto4/">michoto4</a></p>
+                                <p>🔵Twitter: <a href="https://twitter.com/Michoto44">@Michoto44</a></p>
                         </div>
                 </div>
-      </div>
-      <!-- NAVBAR -->
-
-    <div class="container">
-
-        <div class="textContainer">
-                <h1 id="text1">Dzień Dobry, Michoto</h1>
-                <h3 id="text2"></h3>
-                <h2 id="clock">00:00:00</h2>
         </div>
+        <!-- NAVBAR -->
 
-        <div class="search">
-            <form action="https://www.google.com/search" method="get" class="search-bar"> 
-                <input type="text" placeholder="Czego szukasz?" name="q">
+        <div class="container">
 
-                <div class="navigation">
-                    <!-- Menu Toggler -->
-                    <div class="menuToggle"></div>
-                    <!-- Menu Items -->
-                    <div class="menu">
-                      <ul>
-                        <li style="--i:0.1s;"><button onclick="googleEngine()"><img src="images/googleicon.png" class="listIcon"></button></li>
-                        <li style="--i:0.2s;"><button onclick="ddgEngine()"><img src="images/ddgicon.png" class="listIcon"></button></li>
-                        <li style="--i:0.3s;"><button onclick="yahooEngine()"><img src="images/yahooicon.png" class="listIcon"></button></li>
-                      </ul>
-                    </div>
-                  </div>
+                <div class="textContainer">
+                        <h1 id="text1">Dzień Dobry, Michoto</h1>
+                        <h3 id="text2"></h3>
+                        <h2 id="clock">00:00:00</h2>
+                </div>
 
-            </form>
+                <div class="search">
+                        <form action="https://www.google.com/search" method="get" class="search-bar">
+                                <input type="text" placeholder="Czego szukasz?" name="q">
+
+                                <div class="navigation">
+                                        <!-- Menu Toggler -->
+                                        <div class="menuToggle"></div>
+                                        <!-- Menu Items -->
+                                        <div class="menu">
+                                                <ul>
+                                                        <li style="--i:0.1s;"><button onclick="googleEngine()"><img
+                                                                                src="images/icons/googleicon.png"
+                                                                                class="listIcon"></button></li>
+                                                        <li style="--i:0.2s;"><button onclick="ddgEngine()"><img
+                                                                                src="images/icons/ddgicon.png"
+                                                                                class="listIcon"></button></li>
+                                                        <li style="--i:0.3s;"><button onclick="yahooEngine()"><img
+                                                                                src="images/icons/yahooicon.png"
+                                                                                class="listIcon"></button></li>
+                                                </ul>
+                                        </div>
+                                </div>
+
+                        </form>
+                </div>
+
+
+                <div class="widgets">
+                        <div class="box1">
+                                <p class="text">Social media</p>
+                                <hr color="#aaff00">
+                                <div class="buttons-container">
+
+                                        <a href="https://www.youtube.com" class="button1">
+                                                <img src="images/icons/youtube.png" class="img">
+                                        </a>
+
+
+                                        <a href="https://www.instagram.com" class="button1">
+                                                <img src="images/icons/instagram.png" class="img">
+                                        </a>
+
+
+                                        <a href="https://www.twitter.com" class="button1">
+                                                <img src="images/icons/twitter.png" class="img">
+                                        </a>
+
+
+                                        <a href="https://www.twitch.com" class="button1">
+                                                <img src="images/icons/twitch.png" class="img">
+                                        </a>
+
+
+                                        <a href="https://www.facebook.com" class="button1">
+                                                <img src="images/icons/facebook.png" class="img">
+                                        </a>
+
+
+                                        <a href="https://www.messenger.com" class="button1">
+                                                <img src="images/icons/messenger.png" class="img">
+                                        </a>
+
+                                </div>
+                        </div>
+                        <div class="box1">
+                                <p class="text">Sklepy</p>
+                                <hr color="#aaff00">
+                                <div class="buttons-container">
+
+                                        <a href="https://www.morele.net" class="button1">
+                                                <img src="images/icons/morele.png" class="img">
+                                        </a>
+
+                                        <a href="https://www.amazon.pl/" class="button1">
+                                                <img src="images/icons/amazon.png" class="img">
+                                        </a>
+
+                                        <a href="https://www.mediaexpert.pl/" class="button1">
+                                                <img src="images/icons/expert.png" class="img">
+                                        </a>
+
+                                        <a href="https://www.allegro.pl/" class="button1">
+                                                <img src="images/icons/allegro.png" class="img">
+                                        </a>
+                                        <a href="https://www.olx.pl/" class="button1">
+                                                <img src="images/icons/olx.png" class="img">
+                                        </a>
+                                        <a href="https://www.otomoto.pl/" class="button1">
+                                                <img src="images/icons/otomoto.png" class="img">
+                                        </a>
+                                </div>
+                        </div>
+                        <div class="box1">
+                                <p class="text">Inne</p>
+                                <hr color="#aaff00">
+                                <div class="buttons-container">
+
+                                        <a href="https://www.gmail.com" class="button1">
+                                                <img src="images/icons/gmail.png" class="img">
+                                        </a>
+
+                                        <a href="https://mail.proton.me/" class="button1">
+                                                <img src="images/icons/protonmail.png" class="img">
+                                        </a>
+
+                                        <a href="https://poczta.wp.pl/login/login.html" class="button1">
+                                                <img src="images/icons/wppoczta.png" class="img">
+                                        </a>
+
+                                        <a href="https://store.steampowered.com/" class="button1">
+                                                <img src="images/icons/steam.png" class="img">
+                                        </a>
+                                        <a href="https://steamcharts.com/" class="button1">
+                                                <img src="images/icons/steamcharts.png" class="img">
+                                        </a>
+                                        <a href="https://www.roblox.com/home" class="button1">
+                                                <img src="images/icons/roblox.png" class="img">
+                                        </a>
+                                </div>
+                        </div>
+                </div>
         </div>
-        
-
-        <div class="widgets">
-            <div class="box1">
-                <p class="text">Social media</p>
-                <hr color="#aaff00">
-                <div class="buttons-container">
-
-                    <a href="https://www.youtube.com" class="button1">
-                                <img src="images/youtube.png" class="img">
-                    </a>
-
-
-                    <a href="https://www.instagram.com" class="button1">
-                            <img src="images/instagram.png" class="img">
-                    </a>
-
-
-                    <a href="https://www.twitter.com" class="button1">
-                            <img src="images/twitter.png" class="img">
-                    </a>
-
-
-                    <a href="https://www.twitch.com" class="button1">
-                            <img src="images/twitch.png" class="img">
-                    </a>
-
-                </div>
-            </div>
-            <div class="box1">
-                <p class="text">Sklepy</p>
-                <hr color="#aaff00">
-                <div class="buttons-container">
-
-                    <a href="https://www.morele.net" class="button1">
-                                <img src="images/morele.png" class="img">
-                    </a>
-
-                    <a href="https://www.amazon.pl/" class="button1">
-                            <img src="images/amazon.png" class="img">
-                    </a>
-
-                    <a href="https://www.mediaexpert.pl/" class="button1">
-                            <img src="images/expert.png" class="img">
-                    </a>
-
-                    <a href="https://www.allegro.pl/" class="button1">
-                            <img src="images/allegro.png" class="img">
-                    </a>
-                    <a href="https://www.olx.pl/" class="button1">
-                            <img src="images/olx.png" class="img">
-                    </a>
-                    <a href="https://www.otomoto.pl/" class="button1">
-                            <img src="images/otomoto.png" class="img">
-                    </a>
-                </div>
-            </div>
-            <div class="box1">
-                <p class="text">Inne</p>
-                <hr color="#aaff00">
-                <div class="buttons-container">
-
-                    <a href="https://www.gmail.com" class="button1">
-                                <img src="images/gmail.png" class="img">
-                    </a>
-
-                    <a href="https://mail.proton.me/" class="button1">
-                            <img src="images/protonmail.png" class="img">
-                    </a>
-
-                    <a href="https://poczta.wp.pl/login/login.html" class="button1">
-                            <img src="images/wppoczta.png" class="img">
-                    </a>
-
-                    <a href="https://store.steampowered.com/" class="button1">
-                            <img src="images/steam.png" class="img">
-                    </a>
-                    <a href="https://steamcharts.com/" class="button1">
-                            <img src="images/steamcharts.png" class="img">
-                    </a>
-                    <a href="https://www.roblox.com/home" class="button1">
-                            <img src="images/roblox.png" class="img">
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <script src="index.js"></script>
+        <script src="index.js"></script>
 </body>
+
 </html>
