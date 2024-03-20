@@ -1,0 +1,27 @@
+body{
+    font-family: sans-serif, Arial, 'Segoe UI Emoji';
+    margin: 0;
+  
+  
+    background-color: #1c1c1c;
+    aspect-ratio: 960/540;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../layered-waves-haikei.svg);
+  
+  
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+   /* Hide scrollbar for Chrome, Safari and Opera */
+   .body::-webkit-scrollbar {
+    display: none;
+  }
+h1{
+    font-family: sans-serif;
+    color: white;
+    margin: 400px 150px;
+}
+
+

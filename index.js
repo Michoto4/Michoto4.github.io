@@ -30,19 +30,19 @@ function yahooEngine(){
 // ------------------------------------------------------------------------ PRZYCISKI NA NAVBARZE | navbar buttons
 
 function portfolio(){
-    window.location.assign("portfolio.html");
+    window.location.assign("../portfolio/portfolio.html");
 }
 function edit(){
-    window.location.assign("edit.html");
+    window.location.assign("../edit/edit.html");
 }
-function utils(){
-    window.location.assign("utils.html");
+function tools(){
+    window.location.assign("../tools/tools.html");
 }
 function settings(){
-    window.location.assign("settings.html");
+    window.location.assign("../settings/settings.html");
 }
 function todo(){
-    window.location.assign("todoApp.html");
+    window.location.assign("../To-DoApp/todoApp.html");
 }
 
 
