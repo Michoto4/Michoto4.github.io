@@ -1,9 +1,9 @@
 :root {
     --button-color: #8fe00e;
     --button-shadow-color: #9dff00;
-    --button-font-color: #333;
+    --button-font-color: #1c1c1c;
     --checked-color: #b6b6b6c5;
-    --app-background-color: #333;
+    --app-background-color: #1c1c1c;
     --background-color: linear-gradient(135deg, #153677, #4e085f);
     --span-color: #f0f0f0;
     --logo-color: #f0f0f0;
@@ -19,10 +19,7 @@
 .container{
     width: 100%;
     min-height: 100vh;
-    background: linear-gradient(135deg, #153677, #4e085f);
-    background-image: url(../layered-waves-haikei.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: #333;
     padding: 10px;
 }
 .todo-app{

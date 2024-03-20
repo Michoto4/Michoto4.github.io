@@ -1,27 +1,196 @@
-body{
-    font-family: sans-serif, Arial, 'Segoe UI Emoji';
-    margin: 0;
-  
-  
-    background-color: #1c1c1c;
-    aspect-ratio: 960/540;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-image: url(../layered-waves-haikei.svg);
-  
-  
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
-  }
-   /* Hide scrollbar for Chrome, Safari and Opera */
-   .body::-webkit-scrollbar {
-    display: none;
-  }
-h1{
-    font-family: sans-serif;
-    color: white;
-    margin: 400px 150px;
+#iframe-embeded-tool{
+  width: 80%;
+  height: 80%;
+  margin: 0% 10%;
 }
 
+/* TOOL BAR */
 
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+:root{
+  --icon-background-color: #91da00; /* oryginał: #10d7af */
+  --text-shadow-color: #7cb900; /* oryginał: #0ca888 */
+}
+
+html, body {
+  background: #1c1c1c;
+  height: 100%;
+  font-family: sans-serif;
+}
+
+.container {
+  background: #333;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  -moz-transition: all 0.3s ease 0.6s;
+  -o-transition: all 0.3s ease 0.6s;
+  -webkit-transition: all 0.3s ease;
+  -webkit-transition-delay: 0.6s;
+  -webkit-transition: all 0.3s ease 0.6s;
+  transition: all 0.3s ease 0.6s;
+  z-index: 10;
+  padding: 2em;
+  position: relative;
+}
+
+.container.nav-open {
+  margin-top: 8em;
+  width: 90%;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+/*
+  menu icon css3
+*/
+.menu-icon {
+  position: relative;
+  display: block;
+  width: 2.5em;
+  height: 2.5em;
+  cursor: pointer;
+}
+.menu-icon:hover span {
+  background: #222;
+}
+.menu-icon:hover span:before, .menu-icon:hover span:after {
+  background: #222;
+}
+
+.menu-icon > span {
+  position: absolute;
+  top: 50%;
+  display: block;
+  width: 100%;
+  height: 0.25em;
+  background-color: #bbbbbb;
+  border-radius: 3px;
+  -webkit-transition: -webkit-transform 0.3s, background 0.25s ease;
+  -webkit-transition: background 0.25s ease, -webkit-transform 0.3s;
+  transition: background 0.25s ease, -webkit-transform 0.3s;
+  transition: transform 0.3s, background 0.25s ease;
+  transition: transform 0.3s, background 0.25s ease, -webkit-transform 0.3s;
+}
+
+.menu-icon > span:before,
+.menu-icon > span:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #bbbbbb;
+  border-radius: 3px;
+  -webkit-transition: -webkit-transform 0.3s, background 0.25s ease;
+  -webkit-transition: background 0.25s ease, -webkit-transform 0.3s;
+  transition: background 0.25s ease, -webkit-transform 0.3s;
+  transition: transform 0.3s, background 0.25s ease;
+  transition: transform 0.3s, background 0.25s ease, -webkit-transform 0.3s;
+}
+
+.menu-icon > span:before {
+  -webkit-transform: translateY(-0.75em);
+  transform: translateY(-0.75em);
+}
+
+.menu-icon > span:after {
+  -webkit-transform: translateY(0.75em);
+  transform: translateY(0.75em);
+}
+
+/* OPENED */
+.menu-icon.open {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.menu-icon.open > span:before {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.menu-icon.open > span:after {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 5%;
+  color: white;
+  z-index: 1;
+}
+nav ul li.animate {
+  top: 0;
+}
+nav ul li {
+  display: inline-block;
+  text-align: center;
+  margin: 1em 2em;
+  cursor: pointer;
+  position: relative;
+  top: -8em;
+}
+nav ul li:nth-child(1) {
+  -moz-transition: top 0.3s ease 0.15s;
+  -o-transition: top 0.3s ease 0.15s;
+  -webkit-transition: top 0.3s ease;
+  -webkit-transition-delay: 0.15s;
+  -webkit-transition: top 0.3s ease 0.15s;
+  transition: top 0.3s ease 0.15s;
+}
+nav ul li:nth-child(2) {
+  -moz-transition: top 0.3s ease 0.2s;
+  -o-transition: top 0.3s ease 0.2s;
+  -webkit-transition: top 0.3s ease;
+  -webkit-transition-delay: 0.2s;
+  -webkit-transition: top 0.3s ease 0.2s;
+  transition: top 0.3s ease 0.2s;
+}
+nav ul li:nth-child(3) {
+  -moz-transition: top 0.3s ease 0.25s;
+  -o-transition: top 0.3s ease 0.25s;
+  -webkit-transition: top 0.3s ease;
+  -webkit-transition-delay: 0.25s;
+  -webkit-transition: top 0.3s ease 0.25s;
+  transition: top 0.3s ease 0.25s;
+}
+nav ul li:nth-child(4) {
+  -moz-transition: top 0.3s ease 0.3s;
+  -o-transition: top 0.3s ease 0.3s;
+  -webkit-transition: top 0.3s ease;
+  -webkit-transition-delay: 0.3s;
+  -webkit-transition: top 0.3s ease 0.3s;
+  transition: top 0.3s ease 0.3s;
+}
+nav ul li:nth-child(5) {
+  -moz-transition: top 0.3s ease 0.35s;
+  -o-transition: top 0.3s ease 0.35s;
+  -webkit-transition: top 0.3s ease;
+  -webkit-transition-delay: 0.35s;
+  -webkit-transition: top 0.3s ease 0.35s;
+  transition: top 0.3s ease 0.35s;
+}
+nav ul li:hover {
+  opacity: 1;
+}
+nav ul li i {
+  font-size: 1.5em;
+  background: var(--icon-background-color);
+  padding: 0.75em;
+  border-radius: 50%;
+  color: white;
+  display: inline-block;
+  overflow: hidden;
+  text-shadow: 0px 0px var(--text-shadow-color), 1px 1px var(--text-shadow-color), 2px 2px var(--text-shadow-color), 3px 3px var(--text-shadow-color), 4px 4px var(--text-shadow-color), 5px 5px var(--text-shadow-color), 6px 6px var(--text-shadow-color), 7px 7px var(--text-shadow-color), 8px 8px var(--text-shadow-color), 9px 9px var(--text-shadow-color), 10px 10px var(--text-shadow-color), 11px 11px var(--text-shadow-color), 12px 12px var(--text-shadow-color), 13px 13px var(--text-shadow-color), 14px 14px var(--text-shadow-color), 15px 15px var(--text-shadow-color), 16px 16px var(--text-shadow-color), 17px 17px var(--text-shadow-color), 18px 18px var(--text-shadow-color), 19px 19px var(--text-shadow-color), 20px 20px var(--text-shadow-color), 21px 21px var(--text-shadow-color), 22px 22px var(--text-shadow-color), 23px 23px var(--text-shadow-color), 24px 24px var(--text-shadow-color), 25px 25px var(--text-shadow-color), 26px 26px var(--text-shadow-color), 27px 27px var(--text-shadow-color), 28px 28px var(--text-shadow-color), 29px 29px var(--text-shadow-color), 30px 30px var(--text-shadow-color), 31px 31px var(--text-shadow-color), 32px 32px var(--text-shadow-color), 33px 33px var(--text-shadow-color), 34px 34px var(--text-shadow-color), 35px 35px var(--text-shadow-color), 36px 36px var(--text-shadow-color), 37px 37px var(--text-shadow-color), 38px 38px var(--text-shadow-color), 39px 39px var(--text-shadow-color), 40px 40px var(--text-shadow-color), 41px 41px var(--text-shadow-color), 42px 42px var(--text-shadow-color), 43px 43px var(--text-shadow-color), 44px 44px var(--text-shadow-color), 45px 45px var(--text-shadow-color), 46px 46px var(--text-shadow-color), 47px 47px var(--text-shadow-color), 48px 48px var(--text-shadow-color), 49px 49px var(--text-shadow-color), 50px 50px var(--text-shadow-color), 51px 51px var(--text-shadow-color), 52px 52px var(--text-shadow-color), 53px 53px var(--text-shadow-color), 54px 54px var(--text-shadow-color), 55px 55px var(--text-shadow-color), 56px 56px var(--text-shadow-color), 57px 57px var(--text-shadow-color), 58px 58px var(--text-shadow-color), 59px 59px var(--text-shadow-color), 60px 60px var(--text-shadow-color);
+}
+nav ul li h4 {
+  line-height: 2.5;
+}
+
+/* TOOL BAR */
