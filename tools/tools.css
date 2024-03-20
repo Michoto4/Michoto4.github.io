@@ -1,7 +1,10 @@
-#iframe-embeded-tool{
+#iFrame-embeded-tool{
   width: 80%;
   height: 80%;
   margin: 0% 10%;
+}
+#iFrame-empty{
+  display: none;
 }
 
 /* TOOL BAR */
