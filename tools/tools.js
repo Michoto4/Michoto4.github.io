@@ -8,28 +8,48 @@
   
 })(jQuery);
 
+// arrow
+const arrowImage = document.getElementById("arrowImage");
+const menuButton = document.querySelector(".menu-icon");
+menuButton.addEventListener("click", event => {
+    
+    arrowImage.style.display = "none";
+});
+// arrow
 
+// buttons
 const buttons = document.querySelectorAll(".buttons");
 const iFrame = document.getElementById("iFrame-embeded-tool");
 const iFrameEmpty = document.getElementById("iFrame-empty");
-console.log(iFrame.src);
-console.log(iFrameEmpty.src);
 
 buttons.forEach(button => {
     button.addEventListener("click", event => {
         if(event.target.classList.contains("fa-home")){
+
             window.location.assign("../index.html");
+
         }
         else if(event.target.classList.contains("fa-list")){
 
-            if(iFrame.src == iFrameEmpty.src){
-                iFrame.src = "../To-DoApp/todoApp.html";
-            }
-            else{
-                iFrame.src = "";
-            }
+            iFrame.src = "../tools/Apps/To-DoApp/todoApp.html";
+
+        }
+        else if(event.target.classList.contains("fa-arrow-up-9-1")){
+
+            iFrame.src = "../tools/Apps/CounterProgram/counter.html";
+
+        }
+        else if(event.target.classList.contains("fa-dice")){
+
+            iFrame.src = "../tools/Apps/DiceRoller/diceroller.html";
+
+        }
+        else if(event.target.classList.contains("fa-circle-xmark")){
+
+            iFrame.src = "";
 
         }
     
     });
 });
+// buttons fa-arrow-up-9-1 fa-x

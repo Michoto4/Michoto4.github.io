@@ -6,6 +6,9 @@
 #iFrame-empty{
   display: none;
 }
+#arrowImage{
+  transform: rotate(70deg);
+}
 
 /* TOOL BAR */
 
@@ -180,7 +183,8 @@ nav ul li:nth-child(5) {
   transition: top 0.3s ease 0.35s;
 }
 nav ul li:hover {
-  opacity: 1;
+  opacity: 0.8;
+  transition: 0.2s;
 }
 nav ul li i {
   font-size: 1.5em;

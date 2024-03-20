@@ -1,0 +1,31 @@
+body{
+    background-color: #333;
+}
+#countLabel{
+    display: block;
+    text-align: center;
+    font-size: 10em;
+    font-family: sans-serif;
+    color: azure;
+}
+#btnContainer{
+    text-align: center;
+}
+.buttons{
+    padding: 10px 20px;
+    font-size: 1.5em;
+    color: azure;
+    background-color: rgb(138, 43, 226);
+    border-radius: 3px;
+    border-style: outset;
+    border-color: rgb(102, 30, 168);
+    cursor: pointer;
+    transition: background-color 0.25s;
+}
+.buttons:hover{
+    background-color: rgb(111, 22, 194);
+}
+#resetBtn:hover{
+    background-color: rgba(247, 45, 45, 0.842);
+    border-color: rgba(247, 45, 45, 0.842);
+}
