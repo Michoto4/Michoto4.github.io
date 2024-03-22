@@ -1,0 +1,48 @@
+/* ------------ FETCH POKEMON ------------ */
+body{
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+}
+.pokeContainer{
+    margin: 20px 0px;
+    width: 320px;
+    height: fit-content;
+    padding: 20px 25px;
+    background-color: #444;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    box-shadow: 0px 0px 10px 0px #444;
+}
+
+
+#pokeName{
+    width: 200px;
+    height: 25px;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+#fetchButt{
+    margin-left: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 60px;
+    height: 30px;
+    font-family: sans-serif;
+    font-size: 15px;
+    background-color: tomato;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+#fetchButt:hover{
+    box-shadow: 0px 0px 10px tomato;
+}
+#pokemonSprite{
+    width: 300px;
+}
+/* ------------ FETCH POKEMON ------------ */

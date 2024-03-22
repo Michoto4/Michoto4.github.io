@@ -1,0 +1,50 @@
+body{
+    font-family: sans-serif;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    color: rgb(225, 226, 216);
+    background-color: #333;
+}
+.rpgContainer{
+    background-color: #333;
+    width: 500px;
+    height: fit-content;
+}
+.label1{
+    font-size: 2em;
+}
+input{
+    text-align: center;
+    font-size: 1.5em;
+    border-style: dashed;
+    color: rgb(37, 37, 37);
+    margin: 3px auto;
+}
+#result{
+    font-size: 1.5em;
+}
+#gpLabel{
+    font-size: 2em;
+}
+#submit{
+    font-size: 1.5em;
+    background-color: blueviolet;
+    box-shadow: 0px 0px 10px blueviolet;
+    border: 0;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: azure;
+    margin-top: 5px;
+    cursor: pointer;
+    transition: 0.25s;
+}
+#submit:hover{
+    background-color: hsl(271, 76%, 43%);
+}
+#submit:active{
+    background-color: hsl(271, 76%, 63%);
+}
+#errorLabel{
+    color: red;
+}

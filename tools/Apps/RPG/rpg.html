@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="rpg.css">
+    <title>RPG</title>
+</head>
+<body>
+    <!-- ------------ RANDOM PASSWORD GENERATOR ------------ -->
+    
+    <div class="rpgContainer">
+        <label class="label1">Random Password Generator</label>
+        <br>
+        <label>Length of your password:</label><br>
+        <input type="number" id="passwordLength" value="8" min="0"><br>
+        <label id="errorLabel"></label><br>
+        <input type="checkbox" id="includeLowercase" name="choose"><label for="includeLowercase">Lowercase characters</label><br>
+        <input type="checkbox" id="includeUppercase"name="choose"><label for="includeUppercase">Uppercase characters</label><br>
+        <input type="checkbox" id="includeNumbers" name="choose"><labe for="includeNumbers">Number characters</labe><br>
+        <input type="checkbox" id="includeSymbols" name="choose"><label for="includeSymbols">Symbol characters</label><br>
+        <button id="submit" onclick="submitButton()">submit</button><br>
+        <label id="gpLabel"></label><br>
+        <label id="result"></label>
+    </div>
+    
+    
+    <script src="rpg.js"></script>
+</body>
+</html>
